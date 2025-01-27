@@ -1,5 +1,8 @@
 package com.me.auth.authorize;
 
-public interface Authorize {
-    void authorize();
+import com.me.auth.AuthInterface;
+
+@FunctionalInterface
+public interface Authorize extends AuthInterface{
+    boolean authorize();
 }
